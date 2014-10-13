@@ -26,3 +26,15 @@ Prerequisites
 --------------
 ServiceNow Boilerplate assumes that you are using the Accelerator for Web Apps (AWA)
 (available on Share here: http://j.mp/1qdBTIL) and that you pick Bootstrap as your CSS Framework and AngularJS as your JavaScript framework
+
+
+Key Features
+-----------------
+- Boilerplate/Starter HTML
+    - Includes jQuery via Jelly 
+    - Includes necessary libraries for local environment
+    - Ensures that app scales appropriately to mobile
+    - Start sample apps
+- Boilerplate Angular Module
+    - calls stubs when calling the API services locally. Otherwise calls ServiceNow API directly
+- Stubbed API Responses 
