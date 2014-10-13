@@ -35,7 +35,7 @@ AWA-MANAGED REFERENCES
 =====================================================================================
 ********************************* BEGIN BIOLERPLATE *********************************
 =====================================================================================
-Copy everything below to your UI Pages
+Copy everything below to your UI Page for a quick sample page/jumpstart
 -->
 
 <!-- Bootstrap Requires JQuery -->
@@ -52,67 +52,6 @@ Css framework, so we are incluing it here. -->
 -->
 <div id="app" ng-app="app" class="container">
 
-	<!-- Top Navigation -->
-	<nav class="navbar navbar-default" role="navigation">
-	  <div class="container-fluid">
-	      <a class="navbar-brand" href="#">ServiceNow BoilerPlate</a>
-	  </div>
-	</nav>
-
-
-	<!-- Application Tabs
-	* Controller: TabController (as tabCtrl)
-	* Controller controls visible tab via tabCtrl.selectTab() and tabCtron.selectedTab()
-	-->
-	<section ng-controller="TabController as tabCtrl">
-		<!-- Tab Labels -->
-		<ul class="nav nav-tabs">
-			<li  ng-class="{ active: tabCtrl.isSelected('Dashboard') }">
-				<a href="#" ng-click="tabCtrl.selectTab('Dashboard')">Dashboard</a>
-			</li>
-			<li ng-class="{ active: tabCtrl.isSelected('Customers') }">
-				<a href="#" ng-click="tabCtrl.selectTab('Customers')">Customers</a>
-			</li>
-			<li ng-class="{ active: tabCtrl.isSelected('Tasks') }">
-				<a href="#" ng-click="tabCtrl.selectTab('Tasks')">Tasks</a>
-			</li>
-		</ul>
-
-
-		<!-- Dashboard Tab Content -->
-		<div ng-show="tabCtrl.isSelected('Dashboard')">
-
-			<!-- Display Incidents -->
-		    <div ng-controller="IncidentController as incidentCtrl">
-		        <div class="row">
-		            <div class="col-xs-10 col-xs-push-1 well">
-		                <ul class="list-group">
-				            <li class="list-group-item" ng-repeat="incident in incidentCtrl.incidents">
-				                {{incident.short_description}}
-			                </li>
-				        </ul>
-		            </div>
-		        </div>
-		    </div>
-
-		</div> <!-- Dashboard Tab Content -->
-
-
-		<!-- Customers Tab Content -->
-		<div ng-show="tabCtrl.isSelected('Customers')">
-			<blockquote>Coming Soon...</blockquote>
-		</div> <!-- Customers Tab Content -->
-
-
-		<!-- Tasks Tab Content -->
-		<div ng-show="tabCtrl.isSelected('Tasks')">
-			<iframe id="service-catalog" frameborder="0" height="2100" scrolling="no" width="100%" allowtransparency="true" src="https://fenwaygroupdemo1.service-now.com/catalog_home.do?sysparm_view=catalog_default" border="0"></iframe>
-		</div> <!-- Tasks Tab Content -->
-
-
-	</section> <!-- Application Tabs-->
-
 	
-
 
 </div> <!-- /#app -->
